@@ -1,0 +1,15 @@
+#include <stdio.h>
+float conversion(float);
+
+int main(){
+    float G, F;
+    printf("Ingresa la cantidad en grados: ");
+    scanf("%f", &G);
+    F = conversion(G);
+    printf("La cantidad en fahrenheit: %f F", F);
+}
+float conversion(float G){
+    float F;
+    F = (G * 9.0)/(5.0+32.0);
+    return F;
+}
